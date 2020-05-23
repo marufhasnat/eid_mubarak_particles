@@ -1,0 +1,63 @@
+/*font-family: 'Stylish', sans-serif;*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+	background: white;
+	color: #444;
+	font-family: 'Stylish', sans-serif;
+	font-weight: lighter;
+}
+.illustration{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(../images/illustration.jpg) no-repeat top center;
+	background-size: cover;
+	background-position: center;
+	margin: 0 auto;
+}
+h1{
+	position: absolute;
+	text-align: center;
+	color: #01fefd;
+	width: 100%;
+	padding-top: 180px;
+	font-size: 90px;
+}
+p{
+	position: absolute;
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	margin-top: 400px;
+	font-size: 50px;
+}
+.i-large,.i-medium,.i-small{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.i-large{
+	background: url(../images/particules_large.png) repeat 0px 0px;
+	animation: dropFlowParticles 2s linear infinite;
+}
+.i-medium{
+	background: url(../images/particules_medium.png) repeat 0px 0px;
+	animation: dropFlowParticles 12s linear infinite;
+}
+.i-small{
+	background: url(../images/particules_small.png) repeat 0px 0px;
+	animation: dropFlowParticles 27s linear infinite;
+}
+@keyframes dropFlowParticles{
+	from{
+		background-position: 0 0;
+	}
+	to{
+		background-position: 0 413px;
+	}
+}
